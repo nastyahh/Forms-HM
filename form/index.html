@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form method="post" class="form">
+        <div class="form__title">Данные получателя</div>
+        <div class="form__fio">
+            <input type="text" name="user-lastname" placeholder="Фамилия">
+            <input type="text" name="user-firstname" placeholder="Имя">
+             <input type="text" name="user-patronymic" placeholder="Отчество">
+        </div>
+        <div class="form__phone">
+        <input type="tel" name="user-phone" placeholder="Номер телефона">
+        <p class="form__phone__text">По этому номеру телефона мы с вяжемся с вами для подтверждения заказа</p>
+        </div>
+        <div class="form__email">
+        <input type="email" name="user-email" placeholder="E-mail">
+        <p class="form__phone__text">На эту почту вам придет письмо с составом заказа, а так же трэк-номер для его отслеживания</p>
+        </div>
+
+        <div class="form__checkbox">
+        <input class="form__checkbox__input" type="checkbox" name="subscribe" id="form__checkbox__subscribe">
+        <label for="form__checkbox__subscribe" class="form__checkbox__label">Подписаться на рассылку новинок и акций</label>
+        </div>
+
+        <div class="form__payment">
+            <div class="form__title form__payment__title">Способ оплаты</div>
+            <div class="form__payment__radio">
+                <input class="form__payment__input" type="radio" name="payment" id="form__payment__radio-1">
+                 <label for="form__payment__radio-1" class="form__radio__label">Оплата при получении наличными или картой</label>
+                 </div>
+            <div class="form__payment__radio">
+                <input class="form__payment__input" type="radio" name="payment" id="form__payment__radio-2">
+                 <label for="form__payment__radio-2" class="form__radio__label">Оплата банковской картой онлайн</label>
+                 </div>
+        </div>
+    </form>
+</body>
+</html>

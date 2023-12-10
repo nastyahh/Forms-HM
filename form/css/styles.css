@@ -1,0 +1,129 @@
+.form {
+    padding: 12px 0 30px 17px;
+    font-family: "Montserrat", sans-serif;
+    color: #424242;
+}
+input::placeholder {
+    color: #BDBDBD;
+    font-size: 14px;
+    line-height: 17px;
+}
+.form__title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 34px;
+    margin-bottom: 32px;
+}
+.form__fio input, .form__phone input, .form__email input{
+    border-radius: 83px;
+    border: 1px solid #BDBDBD;
+    padding: 17px 0 16px 24px;
+}
+.form__fio input {
+    margin-right: 16px;
+}
+.form__fio, .form__email {
+    margin-bottom: 24px;
+}
+.form__phone {
+    margin-bottom: 27px;
+}
+.form__phone p, .form__email p {
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 125%;
+}
+.form__email input {
+    width: 456px;
+}
+
+/* Checkbox  */
+
+.form__checkbox, .form__payment__radio{
+    padding: 6px 0 5px;
+    position: relative;
+    margin-bottom: 65px;
+}
+.form__checkbox__input {
+    appearance: none;
+    position: absolute;
+}
+.form__checkbox__label, .form__radio__label {
+    padding-left: 46px;
+    color: #424242;
+    font-size: 16px;
+    line-height: 20px;
+}
+.form__checkbox__label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 6.643px;
+    border: 1px solid #976464;
+    background: #fff;
+    z-index: 1;
+}
+.form__checkbox__label::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url(../img/checkbox.svg) no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 7px;
+    transform: translateY(-50%);
+    z-index: 2;
+    opacity: 0;
+}
+
+.form__checkbox__input:checked + .form__checkbox__label::after {
+    opacity: 1;
+}
+
+/* Radio  */
+
+.form__payment__radio {
+    margin-bottom: 8px;
+}
+.form__payment__radio:last-child {
+    margin-bottom: 0;
+}
+.form__payment__input {
+    appearance: none;
+    position: absolute;
+}
+.form__radio__label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 31px;
+    height: 31px;
+    border: 1px solid #976464;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 1;
+}
+.form__radio__label::after {
+    content: url(../img/radio.svg);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 6px;
+    transform: translateY(-50%);
+    width: 19px;
+    height: 19px;
+    z-index: 2;
+    opacity: 0;
+}
+
+.form__payment__input:checked + .form__radio__label::after {
+    opacity: 1;
+}
+
